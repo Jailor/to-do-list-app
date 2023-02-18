@@ -1,35 +1,28 @@
-# Guess the Number Game
+# To-do web app
 
 ## About :thought_balloon:
-The task was to implement the "Higher or Lower" number guessing game, as given by the specification from
-[Tim Buchalka's Masterclass](https://www.udemy.com/course/java-spring-framework-masterclass/) from Udemy.
+The task was to implement a simple to-do list app, as given by the specification from
+[Tim Buchalka's Masterclass](https://www.udemy.com/course/java-spring-framework-masterclass/) from Udemy. 
+I have improved the course app with a database for data permanence.
 
 ## Features :white_check_mark:
-The game has the following features:
- - Allows the user to play the game in the browser
- - User cannot input invalid numbers
- - Internationalization support for the Spanish language
- - Homepage and possibility to replay the game after it has been completed
+The app has the following features:
+ - Allows the basic CRUD operations for the to-do items.
+ - Database support means that information will be kept secure and not lost when the application is stopped.
 
 ## Implementation and GUI :computer:
 
 ### Notable implementation details
-- Spring Boot has been used for building the projects, and many framework features have been explored during this project like constructor dependency injection, beans, contexts, request interception, annotations and many more.
-- Lombok allows for less boilerplate code with its annotations.
-- Constants are stored in property files for easy access and less code duplication
-- Internationalization support for english and spanish using spring functionality
-- Multi-module project, increases cohesion
-- Thymeleaf template engine used frontend logic. 
+- Spring Boot used for building the backend.
+- Architecture pattern, logic separated into packages: service, controller, data, model and util.
+- JSP used for rendering the view
 
-Because there is no CSS, images will look a bit dated, but they still show the basic functionality.
-### Start
-<img src="/ss/start.PNG" width="900" >
+### Main view
+<img src="/ss/main_view.PNG" width="400" >
 
-### Response
-<img src="/ss/response.PNG" width="900" >
+### New item form
+<img src="/ss/new_item.PNG" width="400" >
 
-### Spanish
-<img src="/ss/spanish_i18n.PNG" width="900" >
+### Edit item form
+<img src="/ss/edit-item.PNG" width="400" >
 
-### End
-<img src="/ss/end.PNG" width="900" >
